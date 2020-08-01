@@ -42,7 +42,7 @@ data3 = set(data2).intersection(ebseqgenes)
 #data4=set(data3).intersection(noigenes)
 consensus = np.array(list(data3))
 
-file = open("consensusDCPC.txt",'w')
+file = open("consensusDCPC2.txt",'w')
 for i in consensus:
     file.write(''.join(i)+'\n')
 file.close()
