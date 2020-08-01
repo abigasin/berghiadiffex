@@ -38,11 +38,11 @@ ebseqgenes = ebsig.index.tolist()
 
 data1 = set(deseqgenes).intersection(edgergenes)
 data2 = set(data1).intersection(limmagenes)
-data3 = set(data2).intersection(ebseqgenes)
+#data3 = set(data2).intersection(ebseqgenes)
 #data4=set(data3).intersection(noigenes)
-consensus = np.array(list(data3))
+consensus = np.array(list(data2))
 
-file = open("consensusDCPC2.txt",'w')
+file = open("consensusDCPC.txt",'w')
 for i in consensus:
     file.write(''.join(i)+'\n')
 file.close()
