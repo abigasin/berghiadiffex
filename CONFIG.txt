@@ -1,0 +1,5 @@
+Variable,Value
+consexpressionfiles,/Volumes/LaCie/Documents/SURF2020/Output/
+fastapath,/Volumes/LaCie/Documents/SURF2020/BerghiaDiffEx/Berghia_trinitygg_transdecoderlongestorfs_cdhit95_noaliens_fulltranscripts.fasta
+output,/Volumes/LaCie/Documents/SURF2020/blastoutput/
+genespath,/Volumes/LaCie/Documents/SURF2020/Output/consensusDCPC.txt
