@@ -12,11 +12,16 @@ class consensus():
 		###DESeq 
 		#Getting where pval < .01
 		deseq= pd.read_csv('consexpression_DESeq.csv',sep='\t')
+		deseq = deseq.dropna()
 		self.deseqsig = deseq.loc[deseq['pval']<0.001]
+		if len(np.asarray(self.deseqsig['id']))<10 :
+			self.deseqsig = deseq.loc[deseq['pval']<0.05]
 		###edgeR
 		self.edger = pd.read_csv('consexpression_edger.csv',sep='\t')
 		#Getting where FDR < 0.001
 		self.edgersig = self.edger.loc[self.edger['FDR']<0.001]
+		if len(np.asarray(self.edgersig['FDR'])) < 10:
+			self.edgersig = self.edger.loc[self.edger['PValue']<0.001]
 		###limma-voom
 		limmavoom = pd.read_csv('consexpression_limmavoom.csv',sep='\t')
 		#Getting where pval <0.001
