@@ -3,3 +3,5 @@ consexpressionfiles,/Volumes/LaCie/Documents/SURF2020/Output/
 fastapath,/Volumes/LaCie/Documents/SURF2020/BerghiaDiffEx/Berghia_trinitygg_transdecoderlongestorfs_cdhit95_noaliens_fulltranscripts.fasta
 output,/Volumes/LaCie/Documents/SURF2020/blastoutputs/
 database,nr
+search,blastx
+gofile,/Volumes/LaCie/Documents/SURF2020/Berghia_trinitygg_transdecoderlongestorfs_cdhit95_noaliens_subset.fasta.trinotate_annotation.xls
