@@ -20,8 +20,8 @@ Edit the CONFIG\_tool.txt file in /consexpression/dao/ to fit your data needs.
 run 
 ```python experiment.py /dao/CONFIG_tool.txt ``` 
 
-Edit the CONFIG.txt file to the location of data and 
-desired output locations.
+Edit the ```CONFIG.txt``` file within the berghiadiffex to the location of consexpression data and 
+desired blast results output locations.
 In the configuration text file, ensure there are NO spaces after the comma and after the value.
 
 consexpressionfiles - The location of the output for the consexpression program.
@@ -31,22 +31,20 @@ database - which NCBI database to search against.
 search - which type of blast search you want done (i.e. blastx)
 gofile - tab-delimited gene annotations file from trinotate. 
 
-
-Then, go to the Berghiadiffex folder and edit CONFIG.txt to your needs. 
 then run
 ```python main.py /path/to/CONFIG.TXT```
 
 In the original consexpression output folder, this program will add... 
 
-consensus.txt - has the consensus of differentially expressed genes across DESeq, edgeR, and limma-voom.
-upreg.txt - has the consensus of upregulated genes of the first tissue type listed in the CONFIG_tool.txt file
-compdata.csv - This will only exist if a trinotate file is listed. 
+```consensus.txt``` - has the consensus of differentially expressed genes across DESeq, edgeR, and limma-voom.
+```upreg.txt``` - has the consensus of upregulated genes of the first tissue type listed in the ```CONFIG_tool.txt``` file
+```compdata.csv``` - This will only exist if a trinotate file is listed. 
 It will contain the consensus of diffex genes, whether or not they're upregulated based on edgeR, 
 their gene ontology term, and other statistical values based on edgeR.
 
-In the blastoutput folder specified in CONFIG.txt, all result handles for the blast searches will be 
+In the blastoutput folder specified in ```CONFIG.txt```, all result handles for the blast searches will be 
 saved there. These result handles will also include the sequence of the transcript.
-compiledhits.txt will also be created, which contains the name, length, whether or not it is upregulated 
+```compiledhits.txt``` will also be created, which contains the name, length, whether or not it is upregulated 
 or downregulated and blast hits (or lack thereof) of the every diffex gene given in a single file. 
 
 
