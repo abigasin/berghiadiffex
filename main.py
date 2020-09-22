@@ -20,6 +20,11 @@ if __name__=="__main__":
 	cons.find_consensus()
 	print('Finding upregulated genes...')
 	cons.find_upreg()
+	print('Finding GO terms and compiling data in csv...')
+	if cons.go == '':
+		print('No trinotate annotation file found, skipping this step...')
+	else:
+		cons.find_go()
 	#blasting genes against ncbi database
 	dat = blast()
 	print('\n...\n...\n')
