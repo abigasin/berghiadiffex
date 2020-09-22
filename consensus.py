@@ -94,6 +94,20 @@ class consensus():
 		godownreg = godownreg['gene_ontology_BLASTX'].value_counts()
 		godownreg = godownreg.to_frame()
 		self.godownreg = godownreg.rename(index={'':'Unknown'})
+		
+		compdata = self.edgersig
+		compdata['gene_id']=self.edgersig.index
+		compdata = compdata[compdata['gene_id'].isin(self.consensus)]
+		compdata['go']=''
+		compdata['expression']=''
+		for i in np.arange(len(compdata['gene_id'])):
+			compdata.at[compdata['gene_id'][i],'go']=go.loc[go['#gene_id'].str.contains(compdata['gene_id'][i])]['gene_ontology_BLASTX'].iat[0]
+			if compdata.iloc[i]['logFC']<0:
+				compdata.at[compdata['gene_id'][i],'expression']='upreg'
+			else:
+				compdata.at[compdata['gene_id'][i],'expression']='downreg'
+			
+		compdata.to_csv(r'compdata.csv')
 		'''plt.rcParams['figure.figsize']=[10,6]
 		prop.iloc[1:].plot(kind='barh',subplots=True,legend=False,fontsize=6)
 		plt.title('GO Annotations Proportions in Differentially Expressed Genes Without Unknown')
@@ -111,7 +125,6 @@ class consensus():
 		plt.savefig('GOannotations1.png')
 		plt.close()
 		#print(go.iloc[1]['gene_ontology_BLASTX'])'''
-		
 	def create_plots(self,kind,prop,nam):
 		self.count = self.count+1
 		plt.rcParams['figure.figsize']=[10,6]
@@ -142,7 +155,7 @@ if __name__=="__main__":
 	dat.find_upreg()
 	dat.count = 0
 	dat.find_go()
-	dat.create_plots('barh', dat.prop,'all_genes')
-	dat.create_plots('barh', dat.goupreg,'upreg')
-	dat.create_plots('barh',dat.godownreg,'downreg')
+	#dat.create_plots('barh', dat.prop,'all_genes')
+	#dat.create_plots('barh', dat.goupreg,'upreg')
+	#dat.create_plots('barh',dat.godownreg,'downreg')
 	
