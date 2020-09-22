@@ -20,6 +20,7 @@ class blast():
 		print("output location is " + self.output)
 		self.fastapath = df.loc[df['Variable']=='fastapath'].Value.iat[0]
 		self.db= df.loc[df['Variable']=='database'].Value.iat[0]
+		self.search = df.loc[df['Variable']=='search'].Value.iat[0]
 		#What genes do you what to look at?
 		#self.genespath = df.loc[df['Variable']=='genespath'].Value.iat[0]
 		#self.genes = pd.read_csv(self.genespath, header = None)
@@ -41,7 +42,7 @@ class blast():
    		self.records = SeqIO.index(self.fastapath, "fasta")
    		for i in np.arange(len(self.newlist)):
    			print("Blasting gene " + self.newlist[i]+ " against the "+ self.db+" database.")
-   			result_handle = NCBIWWW.qblast('blastx',self.db,self.records[self.newlist[i]].seq,format_type='Text',hitlist_size=15,expect=0.0001,entrez_query='metazoa[Organism]')
+   			result_handle = NCBIWWW.qblast(self.search,self.db,self.records[self.newlist[i]].seq,format_type='Text',hitlist_size=15,expect=0.0001,entrez_query='metazoa[Organism]')
    			with open('{0}_result_handle.txt'.format(self.newlist[i]),'w') as f:
    				f.write('Gene: '+ self.newlist[i]+'\n\n\n')
    				f.write('Seq:\n'+self.records[newlist[i]].format('fasta'))
