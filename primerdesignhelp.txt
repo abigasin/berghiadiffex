@@ -1,0 +1,7 @@
+How to Design Primers for Upregulated Genes
+
+Provided in the consexpression output folder the user inputs 
+in the CONFIG.txt file, there will be a file created named "upgreg.txt."
+Here are is the consensus of genes found upregulated in the first tissue
+type inputted into consexpression's CONFIG_tool.txt.
+
