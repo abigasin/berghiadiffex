@@ -27,13 +27,28 @@ In the configuration text file, ensure there are NO spaces after the comma and a
 consexpressionfiles - The location of the output for the consexpression program.
 fastapath - the location of the tab-delimited file with the gene names and sequences.
 output - the location where you want blast outputs to be saved.
-database - which NCBI database to search against, keep nr for now as the program only performs blastx.
-gofile - tab-delimited gene annotations file. 
+database - which NCBI database to search against.
+search - which type of blast search you want done (i.e. blastx)
+gofile - tab-delimited gene annotations file from trinotate. 
 
 
-
-Then, go to the Berghiadiffex folder and edit CONFIG.txt to your needs. Currently, the program only performs blastx.
+Then, go to the Berghiadiffex folder and edit CONFIG.txt to your needs. 
 then run
 ```python main.py /path/to/CONFIG.TXT```
 
+In the original consexpression output folder, this program will add... 
 
+consensus.txt - has the consensus of differentially expressed genes across DESeq, edgeR, and limma-voom.
+upreg.txt - has the consensus of upregulated genes of the first tissue type listed in the CONFIG_tool.txt file
+compdata.csv - This will only exist if a trinotate file is listed. 
+It will contain the consensus of diffex genes, whether or not they're upregulated based on edgeR, 
+their gene ontology term, and other statistical values based on edgeR.
+
+In the blastoutput folder specified in CONFIG.txt, all result handles for the blast searches will be 
+saved there. These result handles will also include the sequence of the transcript.
+compiledhits.txt will also be created, which contains the name, length, whether or not it is upregulated 
+or downregulated and blast hits (or lack thereof) of the every diffex gene given in a single file. 
+
+
+For further assistance on how to design primers for in-situ hybridization probes, please read 
+```primerdesignhelp.txt```
