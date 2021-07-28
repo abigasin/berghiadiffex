@@ -50,3 +50,7 @@ or downregulated and blast hits (or lack thereof) of the every diffex gene given
 
 For further assistance on how to design primers for in-situ hybridization probes, please read 
 ```primerdesignhelp.txt```
+
+The consexpression package is from https://costasilvati.github.io/consexpression/.
+
+Costa-Silva J, Domingues D, Lopes FM. RNA-Seq differential expression analysis: An extended review and a software tool. PLoS One. 2017 Dec 21;12(12):e0190152. doi: 10.1371/journal.pone.0190152. PMID: 29267363; PMCID: PMC5739479.
