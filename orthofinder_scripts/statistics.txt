@@ -1,0 +1,70 @@
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR12422333_trinity.Trinity.fasta
+number of TFs: 209186
+total bases: 150398370
+N50: 1190
+L50: 32046
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR12422336_trinity.Trinity.fasta
+number of TFs: 235124
+total bases: 214259432
+N50: 1770
+L50: 30759
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR12422341_trinity.Trinity.fasta
+number of TFs: 122792
+total bases: 110948847
+N50: 1767
+L50: 18415
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR12422344_trinity.Trinity.fasta
+number of TFs: 183512
+total bases: 121103074
+N50: 936
+L50: 31004
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR1505104_trinity.Trinity.fasta
+number of TFs: 163343
+total bases: 101632472
+N50: 843
+L50: 28267
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR1950939_trinity.Trinity.fasta
+number of TFs: 115640
+total bases: 94080964
+N50: 1366
+L50: 18157
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR1950941_trinity.Trinity.fasta
+number of TFs: 97619
+total bases: 70635014
+N50: 1082
+L50: 17975
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR1950950_trinity.Trinity.fasta
+number of TFs: 156185
+total bases: 103111091
+N50: 960
+L50: 27374
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR1950951_trinity.Trinity.fasta
+number of TFs: 185545
+total bases: 107906664
+N50: 755
+L50: 35450
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR3726692_trinity.Trinity.fasta
+number of TFs: 112763
+total bases: 82936982
+N50: 1172
+L50: 17778
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR3726694_trinity.Trinity.fasta
+number of TFs: 134412
+total bases: 93124445
+N50: 1013
+L50: 22639
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR3726696_trinity.Trinity.fasta
+number of TFs: 121697
+total bases: 82077695
+N50: 975
+L50: 20553
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR3726701_trinity.Trinity.fasta
+number of TFs: 141235
+total bases: 102172170
+N50: 1202
+L50: 20559
+/expanse/lustre/projects/sio138/abigasin/orthofinder/orthofinder/sra/trinityoutput/SRR4190242_trinity.Trinity.fasta
+number of TFs: 214657
+total bases: 155809990
+N50: 1131
+L50: 32946
